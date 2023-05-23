@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222126;
+  font-family: "Poppins", sans-serif;
+}
+.app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  min-width: 352px;
+  margin: auto;
+  border-radius: 25px;
+  background: #222126;
+  box-shadow: 12px 12px 24px #1a191d, -12px -12px 24px #2a292f;
+}
+.location {
+  font-size: 48px;
+  font-weight: 400;
+}
+.weather-description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.weather-description:first-letter {
+  text-transform: uppercase;
+}
+.temperature {
+  margin: -30px;
+}
+.temperature-value {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 144px;
+}
+.temperature-degree {
+  transform: translate(0, -60px);
+  display: inline-block;
+  font-size: 64px;
+  font-weight: 100;
+}
+.icon {
+  font-size: 36px;
+  margin: 5px auto 10px auto;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.temperature-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.app-description {
+  color: #2f80ed;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+.temperature-unit {
+  width: 41px;
+  height: 34px;
+  color: #2f80ed;
+  text-align: center;
+  border: 2px solid #2f80ed;
+  border-radius: 14px;
+  padding: 2px 6px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .app {
+    top: 0%;
+    transform: translate(-50%, 0%);
+    margin-top: 11px;
+  }
+}
